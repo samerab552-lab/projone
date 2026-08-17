@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Roastery - Sales</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <main class="sales-container">
+      <!-- =========================
+             Header
+        ========================== -->
+
+      <header class="sales-header">
+        <div>
+          <span class="page-label">H-MARKET </span>
+
+          <h1>آلة البيع</h1>
+
+          <p>احسب سعر القهوة أو الكمية المطلوبة بسهولة</p>
+        </div>
+
+        <a href="/roastery-app/product.html" class="manage-button">
+          إدارة المنتجات
+        </a>
+      </header>
+
+      <!-- =========================
+             Sales Card
+        ========================== -->
+
+      <section class="sales-card">
+        <!-- Product -->
+
+        <div class="form-section">
+          <label for="saleProduct"> المنتج </label>
+
+          <select id="saleProduct"></select>
+        </div>
+
+        <!-- Sale Type -->
+
+        <div class="form-section">
+          <label> طريقة البيع </label>
+
+          <div class="sale-types">
+            <label class="sale-type">
+              <input type="radio" name="saleType" value="price" />
+
+              <span> حسب السعر </span>
+            </label>
+
+            <label class="sale-type">
+              <input type="radio" name="saleType" value="weight" />
+
+              <span> حسب الوزن </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Dynamic Input -->
+
+        <div id="saleInputArea" class="sale-input-area"></div>
+
+        <!-- Result -->
+
+        <div id="saleResult" class="sale-result"></div>
+      </section>
+    </main>
+
+    <script src="js/sales.js"></script>
+  </body>
+</html>

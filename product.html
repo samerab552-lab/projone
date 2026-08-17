@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>إدارة المنتجات</title>
+
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <div>
+          <h1>إدارة المنتجات</h1>
+          <p>أضف وادر منتجاتك.</p>
+        </div>
+
+        <a href="http://localhost/roastery-app/" class="sales-button">
+          ← صفحة البيع
+        </a>
+      </header>
+      <!-- Add Product -->
+      <section class="product-form">
+        <div class="input-group">
+          <label for="productName"> اسم المنتج </label>
+
+          <input type="text" id="productName" placeholder="مثال: قهوة " />
+        </div>
+
+        <div class="input-group">
+          <label for="pricePerKg"> السعر لكل كجم </label>
+
+          <input type="number" id="pricePerKg" placeholder="مثال: 250" />
+        </div>
+
+        <button id="addButton">إضافة المنتج</button>
+      </section>
+
+      <!-- Products -->
+      <section>
+        <div class="products-header">
+          <h2>المنتجات</h2>
+
+          <span class="product-count"> المنتجات </span>
+        </div>
+
+        <ul id="productsList">
+          <!-- Products will be added by JavaScript -->
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/db.js"></script>
+  </body>
+</html>
